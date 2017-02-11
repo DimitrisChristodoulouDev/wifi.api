@@ -1,0 +1,9 @@
+<VirtualHost *:80>
+    DocumentRoot "C:/www/wifi.api/public/"
+    ServerName wifi.api
+	<Directory "C:/www/wifi.api/public/">
+        # --New way of doing it
+        Require all granted
+		Allowoverride All
+    </Directory>
+</VirtualHost>
